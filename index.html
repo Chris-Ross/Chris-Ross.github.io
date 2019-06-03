@@ -4,64 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <style>
-      .vertical-menu {
-        width: 200px;
-      }
-
-      .vertical-menu a {
-        background-color: #eee;
-        color: black;
-        display: block;
-        padding: 12px;
-        text-decoration: none;
-      }
-
-      .vertical-menu a:hover {
-        background-color: #ccc;
-      }
-
-      .vertical-menu a.active {
-        background-color: rgb(223, 10, 38);
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/index.css" />
     <title>Chris Ross Development Portfolio</title>
+    <h1><b>Chris Ross Portfolio</b></h1>
   </head>
-  <h1><b>Chris Ross Portfolio</b></h1>
   <body>
-    
-    <div class="vertical-menu">
-      <a href="https://Chris-Ross.github.io" class="active">Home</a>
-      <a href="https://github.com/Chris-Ross">GitHub</a>
-      <a href="https://www.linkedin.com/in/chris-ross-8753b4b7/">LinkedIn</a>
-      <a href="">Contact</a>
-    </div>
-    <div class="About Me" id
-    <p>Hey there!</p>
-    <p>A little about me and this page.</p>
-    <img
-      src="https://i.imgur.com/qzHwzcE.jpg"
-      alt="Chris Ross"
-      style="width:128px;height:128px;"
-    />
-    <p>
-      My name is Chris, and I have been in the professional world for around 14
-      years. My experience spans many areas, including the Army, Customer
-      Relations, Business and Consulting. I have completed courses for Computer
-      Science Engineering at DeVry University, and completed the WCCI Full stack
-      JS Development course. I have done everything from manual labor, to
-      finance and coding.
-    </p>
-    <p>
-      This is my next step, a step in to the world of software engineering and
-      development. Please, take some time to browse my portfolio, and contact me
-      for anything.
-    </p>
-    <div class="GitHub">
-        <head>
+    <nav class="vertical-menu">
+      <a href="https://Chris-Ross.github.io" target="_blank" class="active"
+        >Home</a
+      >
+      <a href="https://github.com/Chris-Ross" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/chris-ross-8753b4b7/" target="_blank"
+        >LinkedIn</a
+      >
+      <a href="#Contact" target="_blank">Contact</a>
+    </nav>
+    <section class="about-me">
+      <Header class="about-me__header">About Me</Header>
+      <article class="about-me__article">
+        <p>Hey there!</p>
+        <p>A little about me and this page.</p>
+        <img
+          src="https://i.imgur.com/qzHwzcE.jpg"
+          alt="Chris Ross"
+          class="profile-image"
+        />
+        <p>
+          My name is Chris, and I have been in the professional world for around
+          14 years. My experience spans many areas, including the Army, Customer
+          Relations, Business and Consulting. I have completed courses for
+          Computer Science Engineering at DeVry University, and completed the
+          WCCI Full stack JS Development course. I have done everything from
+          manual labor, to finance and coding.
+        </p>
+        <p>
+          This is my next step, a step in to the world of software engineering
+          and development. Please, take some time to browse my portfolio, and
+          contact me for anything.
+        </p>
+      </article>
+    </section>
+    <section class="GitHub" #GitHub>
+      <header class="github__header">GitHub</header>
+      <article>
+        <p>
+          Github is where I keep all my personal projects, and acts as a
+          technical portfolio of my work. The menu at the top has my GitHub
+          link, but I want to detail a few projects below that I personally
+          enjoyed.
+        </p>
+        <b><i>Virtual Pet</i></b>
+        <p>
+          Virtual Pet was an attempt to make a tamagatchi style pet program that
+          can be run on the command line or console. Clicking on the picture
+          will link you to the repository.
+        </p>
+        <a href="https://github.com/Chris-Ross/virtual-pet" class="vp-image">
+          <img src="https://i.imgur.com/PGMz9k1.png" alt="Virtual Pet" />
+        </a>
 
-        </head>
-    </div>
+        <b><i>High St Hospital</i></b>
+        <p>
+          High St Hospital was a project to test the skills of using OOP and
+          incorperating mixins as well as arrays. I very much enjoyed the
+          project!
+        </p>
+        <img
+          src="https://i.imgur.com/FvE6mgW.png"
+          alt="High St Hospital"
+          class="hsh-image"
+        />
+      </article>
+    </section>
+    <section class="contact">
+      <header class="contact__header">Contact me</header>
+      <p>
+        If you are you have an inquiries, please
+        <a href="mailto:ChrisJRossJr@gmail.com" class="contact__email"
+          >Email Me</a
+        >
+      </p>
+    </section>
+    <script></script>
+    <footer></footer>
   </body>
 </html>
