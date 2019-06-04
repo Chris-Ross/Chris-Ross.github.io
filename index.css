@@ -1,20 +1,61 @@
-/* .vertical-menu {
-  width: 200px;
+/* Imports always at the top */
+<style>
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+</style>
+
+/* The * marks styling to the entire document */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.vertical-menu a {
-  background-color: #eee;
-  color: black;
-  display: block;
-  padding: 12px;
+html {
+  /* Can use google fonts to import and set a tiered system of fonts */
+  font: 20px/1 "Montserrat", sans-serif;
+}
+
+a {
   text-decoration: none;
+  color: aquamarine;
 }
 
-.vertical-menu a:hover {
-  background-color: #ccc;
+a:hover {
+  color: brown;
 }
 
-.vertical-menu a.active {
-  background-color: rgb(223, 10, 38);
-  color: white;
-} */
+
+
+.nav__list {
+  /* While each list item has a class, this will apply general styling to the entire tag. Use a class if more than 1 list */
+  list-style: none;
+  display: flex;
+  
+}
+
+.nav__list-item {
+  margin-right: 0.5rem;
+}
+
+.nav__list-item:last-child {
+   margin-right: 0rem
+}
+
+.main-header {
+  align-content: center;
+  background-color: blueviolet;
+  /* To enable flexbox on a certain class, it needs to be enabled as below */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  /* a rem is a measurement of one instance of the root font size
+  an em is a measurement of one instance of a containing element, instead of the root */
+  padding: 1rem 2rem;
+}
+
+h1 {
+  color: beige;
+}
+
+
+
