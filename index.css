@@ -5,6 +5,7 @@
 
 /* The * marks styling to the entire document */
 * {
+  /* border: 1px, solid red */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,7 +21,7 @@ html {
 
 a {
   text-decoration: none;
-  color: aquamarine;
+  color: white;
 }
 
 a:hover {
@@ -32,8 +33,6 @@ a:hover {
 .main-header {
   align-content: center;
   /* background-color: blueviolet; */
-  background-image: url("/Images/code-background.jpg");
-  background-size: 95rem;
   /* To enable flexbox on a certain class, it needs to be enabled as below */
   display: flex;
   justify-content: space-between;
@@ -41,28 +40,69 @@ a:hover {
   /* a rem is a measurement of one instance of the root font size
   an em is a measurement of one instance of a containing element, instead of the root */
   padding: 1rem 2rem;
-  padding-bottom: 20rem;
+  position: fixed;
+  width: 95vw;
+  
+  
+  /* padding-bottom: 20rem; */
 }
 
 .nav__list {
-  /* While each list item has a class, this will apply general styling to the entire tag. Use a class if more than 1 list */
-  list-style: none;
-  display: flex;
-  
+display: flex;
+list-style-type: none;
+-webkit-text-stroke: 0.5px;
+-webkit-text-stroke-color: black;
 }
+
 
 .nav__list-item {
   margin-right: 0.5rem;
 }
 
 .nav__list-item:last-child {
-   margin-right: 0rem
+  margin-right: 0rem
 }
-
 
 h1 {
-  color: yellow;
+  color: white;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 2.5rem;
+  
+  
 }
+
+/* .header-flex {
+  display: grid;
+  
+  
+} */
+
+.hero-image {
+  align-items: center;
+  background-image: url("/Images/code-background.jpg");
+  background-size: 100vw;
+    /* position: fixed; */
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  /* width: vw; */
+}
+
+.hero-image__github {
+  height: 7rem;
+}
+
+.hero-image__linkedin {
+  height: 8rem;
+}
+
+.hero-image__text {
+  color: white;
+  /* display: flex; */
+  
+}
+
 
 /* This is the CSS for the ABout Me section */
 
