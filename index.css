@@ -10,9 +10,12 @@
   padding: 0;
 }
 
+/* THis is the main section of the HTLM. THis will be the esection to determine behaviors of anchors and the HTLM tag */
+
 html {
   /* Can use google fonts to import and set a tiered system of fonts */
   font: 20px/1 "Montserrat", sans-serif;
+  background-color: #f5f5dc;
 }
 
 a {
@@ -24,7 +27,22 @@ a:hover {
   color: brown;
 }
 
+/* THis section contains the CSS for the main header */
 
+.main-header {
+  align-content: center;
+  /* background-color: blueviolet; */
+  background-image: url("/Images/code-background.jpg");
+  background-size: 95rem;
+  /* To enable flexbox on a certain class, it needs to be enabled as below */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  /* a rem is a measurement of one instance of the root font size
+  an em is a measurement of one instance of a containing element, instead of the root */
+  padding: 1rem 2rem;
+  padding-bottom: 20rem;
+}
 
 .nav__list {
   /* While each list item has a class, this will apply general styling to the entire tag. Use a class if more than 1 list */
@@ -41,21 +59,54 @@ a:hover {
    margin-right: 0rem
 }
 
-.main-header {
-  align-content: center;
-  background-color: blueviolet;
-  /* To enable flexbox on a certain class, it needs to be enabled as below */
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-  /* a rem is a measurement of one instance of the root font size
-  an em is a measurement of one instance of a containing element, instead of the root */
-  padding: 1rem 2rem;
-}
 
 h1 {
-  color: beige;
+  color: yellow;
 }
 
+/* This is the CSS for the ABout Me section */
+
+.about-me__header {
+  align-content: center;
+  display: flex;
+  font-size: 2rem;
+  font-style: oblique;
+  justify-content: space-around;
+}
+
+.about-me__article {
+  align-content: center;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.profile-image {
+  height: 20%;
+  width: 20%;
+}
+
+.GitHub {
+  align-content: center;
+  /* display: flex; */
+  justify-content: space-around;
+  text-align: center;
+}
+
+.github__header {
+  align-content: center;
+  display: flex;
+  font-size: 2rem;
+  font-style: oblique;
+  justify-content: space-around;
+}
+
+
+
+
+/* .about-me__header {
+  font-size: 2rem;
+} */
 
 
