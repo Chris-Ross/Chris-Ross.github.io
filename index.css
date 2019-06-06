@@ -21,7 +21,7 @@ html {
 
 a {
   text-decoration: none;
-  color: white;
+  color: violet;
 }
 
 a:hover {
@@ -32,8 +32,7 @@ a:hover {
 
 .main-header {
   align-content: center;
-  /* background-color: blueviolet; */
-  /* To enable flexbox on a certain class, it needs to be enabled as below */
+   /* To enable flexbox on a certain class, it needs to be enabled as below */
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
@@ -50,13 +49,16 @@ a:hover {
 .nav__list {
 display: flex;
 list-style-type: none;
--webkit-text-stroke: 0.5px;
--webkit-text-stroke-color: black;
+font-style: bold;
+text-shadow: 0.05rem 0.05rem black;
 }
 
 
 .nav__list-item {
+  /* color: white; */
   margin-right: 0.5rem;
+  
+  
 }
 
 .nav__list-item:last-child {
@@ -68,6 +70,7 @@ h1 {
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: black;
   font-size: 2.5rem;
+  text-shadow: 0.2rem 0.2rem purple
   
   
 }
@@ -104,22 +107,22 @@ h1 {
 }
 
 
-/* This is the CSS for the ABout Me section */
+/* This is the CSS for the articled sections */
 
-.about-me__header {
+/* .about-me__header {
   align-content: center;
   display: flex;
   font-size: 2rem;
   font-style: oblique;
   justify-content: space-around;
-}
+} */
 
 .about-me__article {
   align-content: center;
   text-align: center;
   margin-bottom: 4rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
 }
 
 .profile-image {
@@ -131,7 +134,10 @@ h1 {
   align-content: center;
   /* display: flex; */
   justify-content: space-around;
-  text-align: center;
+  text-align: center;  
+  margin-bottom: 4rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
 }
 
 .github__header {
@@ -142,8 +148,31 @@ h1 {
   justify-content: space-around;
 }
 
+/* .vp-image {
 
+} */
 
+/* .hsh-linkImage {
+  
+} */
+
+.contact {
+  align-content: center;
+  /* display: flex; */
+  justify-content: space-around;
+  text-align: center;  
+  margin-bottom: 4rem;
+  padding-left: 30rem;
+  padding-right: 30rem;
+}
+
+.contact__header {
+  align-content: center;
+  display: flex;
+  font-size: 2rem;
+  font-style: oblique;
+  justify-content: space-around;
+}
 
 /* .about-me__header {
   font-size: 2rem;

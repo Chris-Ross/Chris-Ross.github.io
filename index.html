@@ -12,9 +12,9 @@
       <h1><b>Chris Ross</b></h1>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__list-item"><a href="/resume">Home</a></li>
-          <li class="nav__list-item"><a href="/resume">Resume</a></li>
-          <li class="nav__list-item"><a href="/contact">Contact</a></li>
+          <li class="nav__list-item"><a href="/">Home</a></li>
+          <li class="nav__list-item"><a href="/resume.html">Resume</a></li>
+          <li class="nav__list-item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         
@@ -33,56 +33,49 @@
         </h2>
       </div>
     <section class="about-me">
-      <Header class="about-me__header">About Me</Header>
+      <!-- <Header class="about-me__header">About Me</Header> -->
       <article class="about-me__article">
-        <p><br>Hey there!</p>
-        <p>A little about me and this page.</p>
+        <p><br>Welcome to my portfolio</p>
+        <!-- <p>A little about me and this page.</p> -->
         <img
           src="Images/profile-pic.jpg"
           alt="Chris Ross"
           class="profile-image"
         />
         <p>
-          My name is Chris, and I have been in the professional world for around
-          14 years. My experience spans many areas, including the Army, Customer
-          Relations, Business and Consulting. I have completed courses for
-          Computer Science Engineering at DeVry University, and completed the
-          WCCI Full stack JS Development course. I have done everything from
-          manual labor, to finance and coding.
+          I live in Columbus, OH. I am a Full-stack JS developer and designer. 
+          I have a son, who is wonderfully amazing. I tinker, design, learn and create. 
         </p>
-        <p>
+        <!-- <p>
           This is my next step, a step in to the world of software engineering
           and development. Please, take some time to browse my portfolio, and
           contact me for anything.
-        </p>
+        </p> -->
       </article>
     </section>
     <section class="GitHub" #GitHub>
-      <header class="github__header">GitHub</header>
+      <header class="github__header">Portfolio Highlights</header>
       <article>
         <p>
           Github is where I keep all my personal projects, and acts as a
-          technical portfolio of my work. The menu at the top has my GitHub
-          link, but I want to detail a few projects below that I personally
-          enjoyed.
+          technical portfolio of my work. Clicking on the pictures will take you to those specific repositories.
         </p>
         <div class="github__vp"><b><i>Virtual Pet</i></b></div>
         <p>
           Virtual Pet was an attempt to make a tamagatchi style pet program that
-          can be run on the command line or console. Clicking on the picture
-          will link you to the repository.
+          can be run on the command line or console.
         </p>
         <a href="https://github.com/Chris-Ross/virtual-pet" target="_blank" alt="Virtual Pet" class="vp-image">
           <img src="Images/virtual-pet.png" alt="Virtual Pet" />
         </a>
 
-        <b><i><br><br> St Hospital</i></b>
+        <b><i><br><br> High St Hospital</i></b>
         <p>
           High St Hospital was a project to test the skills of using OOP and
           incorperating mixins as well as arrays. I very much enjoyed the
           project!
         </p>
-        <a href="https://github.com/clayton-scherer/highst-hospital" target="_blank" alt="High St Hospital" class="hsh-linkimage">
+        <a href="https://github.com/clayton-scherer/highst-hospital" target="_blank" alt="High St Hospital" class="hsh-linkImage">
         <img
           src="Images/highst-hospital.png"
           alt="High St Hospital"
@@ -92,11 +85,29 @@
       </article>
     </section>
     <section class="contact">
-      <header class="contact__header">Contact me</header>
+      <header class="contact__header" id="contact">Contact me</header>
       <p>
-        If you are you have an inquiries, please Email me! <br> I typically respond within 24 hours.
-        <br> <button onclick="window.location.href='mailto:ChrisJRossJr@gmail.com'" class="contact__email"
-          >Click Here to Email Me
+        If you are you have an inquiries, please Email me at <a href="mailto:chrisjrossjr@gmail.com"> ChrisJRossJr@gmail.com</a>, or submit the form below directly to my email! <br> I typically respond within 24 hours.
+        <br> 
+        <form 
+        action="mailto:chrisjrossjr@gmail.com?subject=Mail%20Submission%20from%20Portfolio"
+        method="POST"
+        enctype="text/plain"
+        name="EmailForm"
+        class="email-form">
+      
+      Your Name:<br>
+      <input type="text" size="20" name="VisitorName"><br><br>
+
+      Your Email:<br>
+      <input type="text" size="20" name="VisitorEmail"><br><br>
+      
+      Your Comment:<br>
+      <textarea name="VisitorComment" rows="10" cols="70"></textarea><br><br>
+      
+      <input type="submit" value="Email This Form">
+      
+      </form>
       </p>
     </section>
     <script></script>
