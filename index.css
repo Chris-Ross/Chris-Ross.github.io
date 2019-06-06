@@ -5,19 +5,22 @@
 
 /* The * marks styling to the entire document */
 * {
-  /* border: 1px, solid red */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* THis is the main section of the HTLM. THis will be the esection to determine behaviors of anchors and the HTLM tag */
+/* THis is the main section of the HTLM. THis will be the section to determine behaviors of anchors and the HTLM tag */
 
 html {
   /* Can use google fonts to import and set a tiered system of fonts */
+  
   font: 20px/1 "Montserrat", sans-serif;
   background-color: #f5f5dc;
+  background-image: linear-gradient(to right, rgb(128, 128, 128) 3% , #f5f5dc 8%, #f5f5dc 92%, rgb(128, 128, 128) 97%)
 }
+
+
 
 a {
   text-decoration: none;
@@ -28,6 +31,14 @@ a:hover {
   color: brown;
 }
 
+.profile-image {
+  width: 15vw;
+}
+
+
+
+
+
 /* THis section contains the CSS for the main header */
 
 .main-header {
@@ -35,15 +46,14 @@ a:hover {
    /* To enable flexbox on a certain class, it needs to be enabled as below */
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
-  /* a rem is a measurement of one instance of the root font size
+   /* a rem is a measurement of one instance of the root font size
   an em is a measurement of one instance of a containing element, instead of the root */
   padding: 1rem 2rem;
   position: fixed;
   width: 95vw;
   
   
-  /* padding-bottom: 20rem; */
+ 
 }
 
 .nav__list {
@@ -55,10 +65,8 @@ text-shadow: 0.05rem 0.05rem black;
 
 
 .nav__list-item {
-  /* color: white; */
-  margin-right: 0.5rem;
-  
-  
+  color: white; 
+  margin-right: 0.5rem;  
 }
 
 .nav__list-item:last-child {
@@ -71,111 +79,99 @@ h1 {
   -webkit-text-stroke-color: black;
   font-size: 2.5rem;
   text-shadow: 0.2rem 0.2rem purple
-  
-  
 }
-
-/* .header-flex {
-  display: grid;
-  
-  
-} */
 
 .hero-image {
   align-items: center;
-  background-image: url("/Images/code-background.jpg");
-  background-size: 100vw;
-    /* position: fixed; */
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("/Images/code-background.jpg") ;
+  background-size: cover;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 50vh;
-  /* width: vw; */
-}
+  margin: 0 auto;
+} 
 
 .hero-image__github {
-  height: 7rem;
+  height: 8vw;
 }
 
 .hero-image__linkedin {
-  height: 8rem;
-}
-
-.hero-image__text {
-  color: white;
-  /* display: flex; */
-  
+  height: 8.9vw;
 }
 
 
-/* This is the CSS for the articled sections */
 
-/* .about-me__header {
-  align-content: center;
-  display: flex;
-  font-size: 2rem;
-  font-style: oblique;
-  justify-content: space-around;
-} */
+.hero-image__icons {
+  display: flex
+}
 
-.about-me__article {
-  align-content: center;
+.about-me {
+  width: 55vw;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 4rem;
-  padding-left: 30rem;
-  padding-right: 30rem;
 }
 
-.profile-image {
-  height: 20%;
-  width: 20%;
+.skills {
+ width: 55vw;
+ margin: 0 auto;
+ text-align: center;
 }
 
-.GitHub {
-  align-content: center;
-  /* display: flex; */
-  justify-content: space-around;
-  text-align: center;  
+.color-box1 {
+  background-image: linear-gradient(to right, #f5f5dc 46%, violet 46%, violet 52%, #f5f5dc 55%);
+  height: 1.5rem;
+  
+}
+
+.color-box2 {
+  background-image: linear-gradient(to right, #f5f5dc 8%, violet 8%, violet 85%, #f5f5dc 100%);
+  height: 1.5rem;
+}
+
+.color-box3 {
+  background-image: linear-gradient(to right, #f5f5dc 43%, violet 43%, violet 53%, #f5f5dc 59%);
+  height: 1.5rem;
+}
+
+.skills__list {
+  width: 10vw;
+  margin: 0 auto;
   margin-bottom: 4rem;
-  padding-left: 30rem;
-  padding-right: 30rem;
+  padding-left: 0;
 }
 
-.github__header {
-  align-content: center;
-  display: flex;
+h3 {
   font-size: 2rem;
   font-style: oblique;
-  justify-content: space-around;
 }
 
-/* .vp-image {
+h4 {
+  font-size: 1.5rem;
+  font-style: oblique;
+}
 
-} */
-
-/* .hsh-linkImage {
+.skills__list {
+  list-style: none;
   
-} */
+}
+
 
 .contact {
-  align-content: center;
-  /* display: flex; */
-  justify-content: space-around;
-  text-align: center;  
-  margin-bottom: 4rem;
-  padding-left: 30rem;
-  padding-right: 30rem;
-}
+  width: 55vw;
+  margin: 0 auto;
+  text-align: center;
+ 
+} 
 
 .contact__header {
   align-content: center;
   display: flex;
   font-size: 2rem;
   font-style: oblique;
+  font-weight: bold;
   justify-content: space-around;
 }
-
-/* .about-me__header {
-  font-size: 2rem;
-} */
 
 
