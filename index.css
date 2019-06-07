@@ -107,11 +107,13 @@ h1 {
 }
 
 .about-me {
-  width: 55vw;
+  width: 45vw;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 4rem;
 }
+
+
 
 .skills {
  width: 55vw;
