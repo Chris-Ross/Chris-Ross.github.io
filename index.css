@@ -1,12 +1,8 @@
-/* Imports always at the top */
-<style>
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-</style>
-
 /* The * marks styling to the entire document */
 * {
+  border: 1px solid red;
   box-sizing: border-box;
-  margin: 0;
+  margin: 1px 1px;
   padding: 0;
 }
 
@@ -15,7 +11,7 @@
 html {
   /* Can use google fonts to import and set a tiered system of fonts */
   
-  font: 20px/1 "Montserrat", sans-serif;
+  font: 20px/1 "lato", sans-serif;
   background-color: #f5f5dc;
   background-image: linear-gradient(to right, rgb(128, 128, 128) 3% , #f5f5dc 8%, #f5f5dc 92%, rgb(128, 128, 128) 97%)
 }
@@ -34,10 +30,6 @@ a:hover {
 .profile-image {
   width: 15vw;
 }
-
-
-
-
 
 /* THis section contains the CSS for the main header */
 
@@ -100,30 +92,25 @@ h1 {
   height: 8.9vw;
 }
 
-
-
 .hero-image__icons {
   display: flex
 }
 
-.about-me {
-  width: 45vw;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-
-
-.skills {
- width: 55vw;
- margin: 0 auto;
- text-align: center;
-}
+.header {
+  align-content: center;
+  display: flex;
+  font-size: 2rem;
+  font-style: oblique;
+  font-weight: bold;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  }
 
 .color-box1 {
   background-image: linear-gradient(to right, #f5f5dc 46%, violet 46%, violet 52%, #f5f5dc 55%);
   height: 1.5rem;
+  
   
 }
 
@@ -137,12 +124,46 @@ h1 {
   height: 1.5rem;
 }
 
-.skills__list {
-  width: 10vw;
-  margin: 0 auto;
-  margin-bottom: 4rem;
-  padding-left: 0;
+.color-box4 {
+  background-image: linear-gradient(to right, #f5f5dc 8%, violet 8%, violet 85%, #f5f5dc 100%);
+  height: 1.5rem;
 }
+
+.skills {
+  text-align: center;
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.icon {
+  width: 6rem;
+}
+
+.projects-style {
+  display: inline-flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 10%;
+}
+
+.vp-style {
+  width: 40vw;
+}
+
+.hsh-style {
+  width: 40vw;
+}
+
+.vp-style__image {
+  height: 40vh;
+  width: 30vw;
+}
+
+.hsh-style__image {
+  height: 40vh;
+  width: 30vw;
+}
+
 
 h3 {
   font-size: 2rem;
@@ -154,11 +175,12 @@ h4 {
   font-style: oblique;
 }
 
-.skills__list {
-  list-style: none;
-  
-}
 
+.about-me {
+  width: 45vw;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .contact {
   width: 55vw;
@@ -167,13 +189,32 @@ h4 {
  
 } 
 
-.contact__header {
-  align-content: center;
-  display: flex;
-  font-size: 2rem;
-  font-style: oblique;
-  font-weight: bold;
-  justify-content: space-around;
+.contact__intro {
+  margin-bottom: 3rem;
 }
 
+.contact__flex {
+  display: flex;
+  justify-content: center;
+}
 
+.contact__left {
+  margin-right: 5vw;
+  font-weight: bold
+}
+
+.contact__right {
+  padding-left: 5vw;
+  border-left: 3px solid gray;
+}
+
+.resume {
+  display: block;
+  width: 45vw;
+  margin: 0 auto;
+ 
+}
+
+.resume-style {
+  margin-top: 6rem;
+}

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="/index.css" />
     <title>Chris Ross Development Portfolio</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+      </style>
   </head>
   <body>
     <header class="main-header">
@@ -13,8 +16,8 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list-item"><a href="/">Home</a></li>
-          <li class="nav__list-item"><a href="/resume.html">Resume</a></li>
-          <li class="nav__list-item"><a href="#contact">Contact</a></li>
+          <li class="nav__list-item"><a href="/Images/Chris Ross Resume.pdf" target="_blank">Resume</a></li>
+          <li class="nav__list-item"><a href="#contact-page">Contact</a></li>
           </ul>
         </nav>
         
@@ -31,72 +34,55 @@
             </h2>
           </div>
     <section class="about-me">
-      <!-- <Header class="about-me__header">About Me</Header> -->
+        <header class="header" id="contact"><h3><div class="color-box2">About Me</div></h3></header>
       <article class="about-me__article">
-        <h3><br><div class="color-box3">About Me</div></h3>
-        <!-- <p>A little about me and this page.</p> -->
-        <img
+          <img
           src="Images/profile-pic.jpg"
           alt="Chris Ross"
           class="profile-image"
         />
         <p>
-          I live in Columbus, OH. I am a Full-stack JS developer and designer. 
-          I have a son, who is wonderfully amazing. I tinker, design, learn and create. 
+          I live in Columbus, OH. I am a Full-stack JS developer and designer. I take pride in my code. Code that "just works" doesn't mean it's clean code.
+          I have a son, who is wonderfully amazing. I am working everyday to improve my skills. 
         </p>
-        <!-- <p>
-          This is my next step, a step in to the world of software engineering
-          and development. Please, take some time to browse my portfolio, and
-          contact me for anything.
-        </p> -->
       </article>
     </section>
-    <section class="skills" #GitHub>
-      <h3><div class="color-box1">Skills</div></h3>
-        
-      <h4>Technical</h4>
-      <ul class="skills__list">
-        <li>JavaScript</li>
-        <li>Jest</li>
-        <li>Node, NPM, Vue</li>
-        <li>React</li>
-        </ul>
-      <h4>Other</h4>
-      <ul class="skills__list">
-        <li>Adobe Creative Suite</li>
-        <li>Filmora 9, Filmora Pro, Sony Vegas Pro</li>
-        <li>Audio Engineering Equipment</li>
-        <li>SEO, CMS, CRM, Digital Marketing</li>
-      </ul>
-      
-
+    <section class="Projects">
+        <header class="header" id="contact"><h3><div class="color-box2">Projects</div></h3></header>
+      <div class="projects-style">
+      <div class="vp-style">
+        <h4>Virtual Pet</h4>
+          <a href="">
+          <img src="./Images/virtual-pet.png" alt="Virtual Pet" class="vp-style__image">
+            </a>  
+          <p>Virtual Pet was a project designed to test the basics of JS backend using OOP to create a Tamagatchi style pet.</p>
+      </div>
+        <div class="hsh-style">
+          <h4>High St Hospital</h4>
+            <a href="">
+              <img src="./Images/highst-hospital.png" alt="High Street Hospital" class="hsh-style__image">
+            </a>
+            <p>High St Hospital was a building on the Virtual Pet project to test our knowedge of JS backend to create a terminal style input ofr a hospital in order to manage it's employees and patients</p>
+            </div>
+      </div>
       
     </section>
+    <section class="skills">
+        <header class="header" id="contact"><h3><div class="color-box4">Skills</div></h3></header>
+        <div class="skills__icons">
+          <img src="./Images/javascript.png" alt="JavaScript" class="icon"><img src="./Images/nodejslogo.png" alt="Node" class="icon"><img src="./Images/react.png" alt="React" class="icon"><img src="./Images/256-256-8b61de4c84033266e15317a6eb9fda2d-css3.png" alt="CSS3" class="icon"><img src="./Images/HTML5_Logo_256.png" alt="HTML5" class="icon"><img src="./Images/img_ajax.png" alt="AJAX" class="icon"><img src="./Images/SQL-Database-(generic).png" alt="SQL" class="icon"><img src="./Images/Risk-management-image.png" alt="Agile (scrum)" class="icon">
+        </div>
+    </section>
     <section class="contact">
-      <header class="contact__header" id="contact"><div class="color-box2">Contact me</div></header>
-      <p>
-        If you are you have an inquiries, please Email me at <a href="mailto:chrisjrossjr@gmail.com"> ChrisJRossJr@gmail.com</a>, or submit the form below directly to my email! <br> I typically respond within 24 hours.
+      <header class="header" id="contact-page"><h3><div class="color-box2">Contact me</div></h3></header>
+      <p class="contact__intro">
+        If you are you have an inquiries, please get ahold of me. <br> I typically respond within 24 hours.
         <br> 
-        <form 
-        action="mailto:chrisjrossjr@gmail.com?subject=Mail%20Submission%20from%20Portfolio"
-        method="POST"
-        enctype="text/plain"
-        name="EmailForm"
-        class="email-form">
-      
-      Your Name:<br>
-      <input type="text" size="20" name="VisitorName"><br><br>
-
-      Your Email:<br>
-      <input type="text" size="20" name="VisitorEmail"><br><br>
-      
-      Your Comment:<br>
-      <textarea name="VisitorComment" rows="10" cols="70"></textarea><br><br>
-      
-      <input type="submit" value="Email This Form">
-      
-      </form>
-      </p>
+        </p>
+      <div class="contact__flex">
+        <p class="contact__left">Email<br>Phone<br>Social<br></p>
+        <p class="contact__right"><a href="mailto:ChrisJRossJr@gmail.com" target="_blank">ChrisJRossJr@gmail.com</a><br>(614) 398-3361<br><a href="https://github.com/Chris-Ross" target="_blank">Github</a>  |  <a href="https://www.linkedin.com/in/chris-ross-8753b4b7/">LinkedIn</a></p>
+        </div>
     </section>
     <script></script>
     <footer><small> &copy; 2019, Chris Ross</small></footer>
