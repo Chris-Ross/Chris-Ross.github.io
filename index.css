@@ -1,6 +1,6 @@
 /* The * marks styling to the entire document */
 * {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   box-sizing: border-box;
   margin: 1px 1px;
   padding: 0;
