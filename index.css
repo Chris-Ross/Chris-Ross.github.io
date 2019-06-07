@@ -143,7 +143,7 @@ h1 {
   display: inline-flex;
   justify-content: space-around;
   text-align: center;
-  margin: 0 10%;
+  margin: 0 9%;
 }
 
 .vp-style {
@@ -177,7 +177,7 @@ h4 {
 
 
 .about-me {
-  width: 45vw;
+  width: 35vw;
   margin: 0 auto;
   text-align: center;
 }
@@ -208,13 +208,6 @@ h4 {
   border-left: 3px solid gray;
 }
 
-.resume {
-  display: block;
-  width: 45vw;
-  margin: 0 auto;
- 
-}
-
-.resume-style {
-  margin-top: 6rem;
+.contact__intro {
+  font-size: 1.2rem;
 }
