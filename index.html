@@ -7,85 +7,49 @@
     <link rel="stylesheet" type="text/css" href="/index.css" />
     <title>Chris Ross Development Portfolio</title>
     <style>
-      @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-      </style>
-      <link rel="icon" href="./Images/CRico.png">
+      @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+    </style>
+    <link rel="icon" href="./Images/CRico.png" />
   </head>
+
   <body>
-    <header class="main-header">
-      <h1><b>Chris Ross</b></h1>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item"><a href="/">Home</a></li>
-          <li class="nav__list-item"><a href="/Images/Chris Ross Resume.pdf" target="_blank">Resume</a></li>
-          <li class="nav__list-item"><a href="#contact-page">Contact</a></li>
-          </ul>
-        </nav>
-        
-      </header>
-        <div class="header-flex"></div>
-          <h2 class="hero-image">
-            <div class="hero-image__icons">
-              <a href="https://github.com/Chris-Ross" target="_blank">
-              <img src="/Images/GitHub-Mark.png" alt="GitHub" class="hero-image__github">
-              </a>
-              <a href="https://www.linkedin.com/in/chris-ross-8753b4b7/" target="_blank">
-              <img src="/Images/linkedin-mark2.png" alt="Linked In" class="hero-image__linkedin"></a>
-            </div>
-            </h2>
-          </div>
-    <section class="about-me">
-        <header class="header" id="contact"><h3><div class="color-box2">About Me</div></h3></header>
-      <article class="about-me__article">
-          <img
-          src="Images/profile-pic.jpg"
-          alt="Chris Ross"
-          class="profile-image"
-        />
-        <p>
-          I live in Columbus, OH. I am a Full-stack JS developer and designer. I take pride in my code. Code that "just works" doesn't mean it's clean code.
-          I have a son, who is wonderfully amazing. I am working everyday to improve my skills. 
-        </p>
-      </article>
-    </section>
-    <section class="Projects">
-        <header class="header" id="contact"><h3><div class="color-box2">Projects</div></h3></header>
-      <div class="projects-style">
-      <div class="vp-style">
-        <h4>Virtual Pet</h4>
-          <a href="https://github.com/Chris-Ross/virtual-pet">
-          <img src="./Images/virtual-pet.png" alt="Virtual Pet" class="vp-style__image">
-            </a>  
-          <p>Virtual Pet was a project designed to test the basics of JS backend using OOP to create a Tamagatchi style pet.</p>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="#about-me">ABOUT ME</a></li>
+        <li class="nav__list-item"><a href="#skills">SKILLS</a></li>
+        <li class="nav__list-item"><a href="#projects">PROJECTS</a></li>
+        <li class="nav__list-item"><a href="#contact-page">CONTACT</a></li>
+      </ul>
+    </nav>
+    <header class="main-header"></header>
+
+    <img
+      src="/Images/SkylineFinal.png"
+      alt="Columbus Skyline"
+      class="hero-image"
+    />
+
+    <header class="profile">
+      <img src="/Images/profile-pic.jpg" alt="" class="profile-picture" />
+      <h1>CHRIS ROSS</h1>
+      <h2>SOFTWARE DEVELOPER</h2>
+      <div class="image-flex">
+        <a href="https://github.com/Chris-Ross" target="_blank">
+          <img src="/Images/GitHub-Mark.png" alt="GitHub Logo" class="link-logo"
+        /></a>
+        <a href="www.linkedin.com/in/chris-j-ross"
+          ><img
+            src="/Images//LinkedIn.png"
+            alt="LinkedIn Logo"
+            class="link-logo"
+        /></a>
       </div>
-        <div class="hsh-style">
-          <h4>High St Hospital</h4>
-            <a href="https://github.com/clayton-scherer/highst-hospital">
-              <img src="./Images/highst-hospital.png" alt="High Street Hospital" class="hsh-style__image">
-            </a>
-            <p>High St Hospital was a building on the Virtual Pet project to test our knowedge of JS backend to create a terminal style input ofr a hospital in order to manage it's employees and patients</p>
-            </div>
-      </div>
-      
-    </section>
-    <section class="skills">
-        <header class="header" id="contact"><h3><div class="color-box4">Skills</div></h3></header>
-        <div class="skills__icons">
-          <img src="./Images/javascript.png" alt="JavaScript" class="icon"><img src="./Images/nodejslogo.png" alt="Node" class="icon"><img src="./Images/react.png" alt="React" class="icon"><img src="./Images/256-256-8b61de4c84033266e15317a6eb9fda2d-css3.png" alt="CSS3" class="icon"><img src="./Images/HTML5_Logo_256.png" alt="HTML5" class="icon"><img src="./Images/img_ajax.png" alt="AJAX" class="icon"><img src="./Images/SQL-Database-(generic).png" alt="SQL" class="icon"><img src="./Images/Risk-management-image.png" alt="Agile (scrum)" class="icon">
-        </div>
-    </section>
-    <section class="contact">
-      <header class="header" id="contact-page"><h3><div class="color-box2">Contact me</div></h3></header>
-      <p class="contact__intro">
-        If you are you have an inquiries, please get ahold of me. <br> I typically respond within 24 hours.
-        <br> 
-        </p>
-      <div class="contact__flex">
-        <p class="contact__left">Email<br>Phone<br>Social<br></p>
-        <p class="contact__right"><a href="mailto:ChrisJRossJr@gmail.com" target="_blank">ChrisJRossJr@gmail.com</a><br>(614) 398-3361<br><a href="https://github.com/Chris-Ross" target="_blank">Github</a>  |  <a href="https://www.linkedin.com/in/chris-ross-8753b4b7/">LinkedIn</a></p>
-        </div>
-    </section>
-    <script></script>
+      <button href="#" onclick="window.open('Resume.pdf')">
+        RESUME
+      </button>
+      <img src="/Images/ImageCover.png" class="pixelation" />
+    </header>
+
     <footer><small> &copy; 2019, Chris Ross</small></footer>
   </body>
 </html>
