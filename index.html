@@ -1,55 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Chris Ross Development Portfolio</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
-    </style>
-    <link rel="icon" href="./Images/CRico.png" />
-  </head>
 
-  <body>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item"><a href="#about-me">ABOUT ME</a></li>
-        <li class="nav__list-item"><a href="#skills">SKILLS</a></li>
-        <li class="nav__list-item"><a href="#projects">PROJECTS</a></li>
-        <li class="nav__list-item"><a href="#contact-page">CONTACT</a></li>
-      </ul>
-    </nav>
-    <header class="main-header"></header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="/index.css" />
+  <title>Chris Ross Development Portfolio</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+  </style>
+  <link rel="icon" href="./Images/CRico.png" />
+</head>
 
-    <img
-      src="/Images/SkylineFinal.png"
-      alt="Columbus Skyline"
-      class="hero-image"
-    />
+<body>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list-item"><a href="#about-me">ABOUT ME</a></li>
+      <li class="nav__list-item"><a href="#skills">SKILLS</a></li>
+      <li class="nav__list-item"><a href="#projects">PROJECTS</a></li>
+      <li class="nav__list-item"><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+  <header class="main-header"></header>
 
-    <header class="profile">
-      <img src="/Images/profile-pic.jpg" alt="" class="profile-picture" />
-      <h1>CHRIS ROSS</h1>
-      <h2>SOFTWARE DEVELOPER</h2>
-      <div class="image-flex">
-        <a href="https://github.com/Chris-Ross" target="_blank">
-          <img src="/Images/GitHub-Mark.png" alt="GitHub Logo" class="link-logo"
-        /></a>
-        <a href="www.linkedin.com/in/chris-j-ross"
-          ><img
-            src="/Images//LinkedIn.png"
-            alt="LinkedIn Logo"
-            class="link-logo"
-        /></a>
+  <header class="profile">
+    <img src="/Images/profile-pic.jpg" alt="" class="profile-picture" />
+    <h1>CHRIS ROSS</h1>
+    <h2>SOFTWARE DEVELOPER</h2>
+    <div class="image-flex">
+      <a href="https://github.com/Chris-Ross" target="_blank">
+        <img src="/Images/GitHub-Mark.png" alt="GitHub Logo" class="link-logo" /></a>
+      <a href="www.linkedin.com/in/chris-j-ross"><img src="/Images//LinkedIn.png" alt="LinkedIn Logo"
+          class="link-logo" /></a>
+    </div>
+    <button href="#" onclick="window.open('Resume.pdf')" class="myButton">
+      RESUME
+    </button>
+  </header>
+
+  <section class="section-border" id="about-me">
+    <div class="border">
+      <div>
+        <h4>ABOUT ME</h4>
+        <br> <br>
+        <p>
+          I live in Columbus Ohio. I am very fortunate to have grown up in an
+          environment where I could get ahold of the newer technology coming
+          out. Whether through working summer jobs or scavenging, I always
+          wanted to decode the new systems and computers to see how they
+          worked. At a young age, I was interested in how to talk to
+          computers. Now, I can live that childhood fantasy! </p> <br /><br />
+        <p> Code that "just works" doesn't mean it's clean code. I strive to
+          communicate with computers in the most efficient way possible, and
+          that means I'm always learning. Technology is moving fast, and the
+          only way to understand it is to always be learning something new.</p>
+        <br /><br />
+        <p> Both my professional and personal growth are top priorities to me,
+          and I am always striving to be better.</p>
+        </p>
       </div>
-      <button href="#" onclick="window.open('Resume.pdf')">
-        RESUME
-      </button>
-      <img src="/Images/ImageCover.png" class="pixelation" />
-    </header>
+    </div>
+  </section>
 
-    <footer><small> &copy; 2019, Chris Ross</small></footer>
-  </body>
+  <section class="section-border" id="skills">
+    <div class="border">
+      <div>
+        <h4>SKILLS</h4>
+        <div class="icons">
+          <div>
+            <h6>JAVASCRIPT</h6>
+            <img src="/Images/javascript.png" alt="JS" class="icon">
+          </div>
+          <div>
+            <h6>NODE.JS</h6>
+            <img src="/Images/nodejslogo.png" alt="JS" class="icon">
+          </div>
+          <div>
+            <h6>REACT</h6>
+            <img src="/Images/react.png" alt="JS" class="icon">
+          </div>
+          <div>
+            <h6>CSS3</h6>
+            <img src="/Images/256-256-8b61de4c84033266e15317a6eb9fda2d-css3.png" alt="JS" class="icon">
+          </div>
+          <div>
+            <h6>HTML5</h6>
+            <img src="/Images/HTML5_Logo_256.png" alt="JS" class="icon">
+          </div>
+          <div>
+            <h6>AJAX</h6>
+            <img src="/Images/img_ajax.png" alt="JS" class="icon">
+          </div>
+          <div>
+            <h6>SQL</h6>
+            <img src="/Images/SQL-Database-(generic).png" alt="JS" class="icon">
+          </div>
+          <div>
+            <h6>AGILE</h6>
+            <img src="/Images/Risk-management-image.png" alt="JS" class="icon">
+          </div>
+          <div>
+            <h6>MONGODB</h6>
+            <img src="/Images/MongoDB.jpg" alt="JS" class="icon">
+          </div>
+          <div>
+            <h6>AWS</h6>
+            <img src="/Images/AWS.png" alt="JS" class="icon">
+          </div>
+          <div>
+            <h6>GIT</h6>
+            <img src="/Images/git.png" alt="JS" class="icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-border" id="projects">
+    <div class="border">
+      <div>
+        <h4>PROJECTS</h4>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="contact">
+    ChrisJRossJr@gmail.com
+    <nav class="footer-nav">
+      <a href="https://github.com/Chris-Ross" target="_blank">
+        <img src="/Images/GitHub-Mark2.png" alt="GitHub Logo" class="link-logo" /></a>
+      <a href="www.linkedin.com/in/chris-j-ross"><img src="/Images//LinkedIn2.png" alt="LinkedIn Logo"
+          class="link-logo" /></a>
+    </nav>
+    <small>&copy; Chris Ross 2019</small>
+  </footer>
+</body>
+
 </html>
