@@ -1,0 +1,233 @@
+/* The * marks styling to the entire document */
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* THis is the main section of the HTLM. THis will be the section to determine behaviors of anchors and the HTLM tag */
+
+html {
+  /* Can use google fonts to import and set a tiered system of fonts */
+
+  font: 20px/1 "lato", sans-serif;
+  background-color: #f5f5dc;
+  background-image: linear-gradient(
+    to right,
+    rgb(128, 128, 128) 3%,
+    #f5f5dc 8%,
+    #f5f5dc 92%,
+    rgb(128, 128, 128) 97%
+  );
+}
+
+a {
+  text-decoration: none;
+  color: violet;
+}
+
+a:hover {
+  color: brown;
+}
+
+.profile-image {
+  width: 15vw;
+}
+
+/* THis section contains the CSS for the main header */
+
+.main-header {
+  align-content: center;
+  /* To enable flexbox on a certain class, it needs to be enabled as below */
+  display: flex;
+  justify-content: space-between;
+  /* a rem is a measurement of one instance of the root font size
+  an em is a measurement of one instance of a containing element, instead of the root */
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 95vw;
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  font-style: bold;
+  text-shadow: 0.05rem 0.05rem black;
+}
+
+.nav__list-item {
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.nav__list-item:last-child {
+  margin-right: 0rem;
+}
+
+h1 {
+  color: white;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 2.5rem;
+  text-shadow: 0.2rem 0.2rem purple;
+}
+
+.hero-image {
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/Images/code-background.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  margin: 0 auto;
+}
+
+.hero-image__github {
+  height: 8vw;
+}
+
+.hero-image__linkedin {
+  height: 8.9vw;
+}
+
+.hero-image__icons {
+  display: flex;
+}
+
+.header {
+  align-content: center;
+  display: flex;
+  font-size: 2rem;
+  font-style: oblique;
+  font-weight: bold;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.color-box1 {
+  background-image: linear-gradient(
+    to right,
+    #f5f5dc 46%,
+    violet 46%,
+    violet 52%,
+    #f5f5dc 55%
+  );
+  height: 1.5rem;
+}
+
+.color-box2 {
+  background-image: linear-gradient(
+    to right,
+    #f5f5dc 8%,
+    violet 8%,
+    violet 85%,
+    #f5f5dc 100%
+  );
+  height: 1.5rem;
+}
+
+.color-box3 {
+  background-image: linear-gradient(
+    to right,
+    #f5f5dc 43%,
+    violet 43%,
+    violet 53%,
+    #f5f5dc 59%
+  );
+  height: 1.5rem;
+}
+
+.color-box4 {
+  background-image: linear-gradient(
+    to right,
+    #f5f5dc 8%,
+    violet 8%,
+    violet 85%,
+    #f5f5dc 100%
+  );
+  height: 1.5rem;
+}
+
+.skills {
+  text-align: center;
+  margin: 0 auto;
+  width: 60vw;
+}
+
+.icon {
+  width: 6rem;
+}
+
+.projects-style {
+  display: inline-flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 0 9%;
+}
+
+.vp-style {
+  width: 40vw;
+}
+
+.hsh-style {
+  width: 40vw;
+}
+
+.vp-style__image {
+  height: 40vh;
+  width: 30vw;
+}
+
+.hsh-style__image {
+  height: 40vh;
+  width: 30vw;
+}
+
+h3 {
+  font-size: 2rem;
+  font-style: oblique;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+
+.about-me {
+  width: 35vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact {
+  width: 55vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact__intro {
+  margin-bottom: 3rem;
+}
+
+.contact__flex {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__left {
+  margin-right: 5vw;
+  font-weight: bold;
+}
+
+.contact__right {
+  padding-left: 5vw;
+  border-left: 3px solid gray;
+}
+
+.contact__intro {
+  font-size: 1.2rem;
+}
