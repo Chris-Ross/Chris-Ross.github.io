@@ -10,18 +10,20 @@
   <style>
     @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
   </style>
-  <link rel="icon" href="./Images/CRico.png" />
+  <link rel="icon" href="./Images/Logo.png" />
 </head>
 
-<body>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__list-item"><a href="#about-me">ABOUT ME</a></li>
-      <li class="nav__list-item"><a href="#skills">SKILLS</a></li>
-      <li class="nav__list-item"><a href="#projects">PROJECTS</a></li>
-      <li class="nav__list-item"><a href="#contact">CONTACT</a></li>
-    </ul>
-  </nav>
+<body class="fade">
+  <div class="animate-wrapper">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item"><a href="#about-me">ABOUT ME</a></li>
+        <li class="nav__list-item"><a href="#skills">SKILLS</a></li>
+        <li class="nav__list-item"><a href="#projects">PROJECTS</a></li>
+        <li class="nav__list-item"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
   <header class="main-header"></header>
 
   <header class="profile">
@@ -34,7 +36,7 @@
       <a href="www.linkedin.com/in/chris-j-ross"><img src="/Images//LinkedIn.png" alt="LinkedIn Logo"
           class="link-logo" /></a>
     </div>
-    <button href="#" onclick="window.open('Resume.pdf')" class="myButton">
+    <button href="#" onclick="window.open('Chris Ross Resume.pdf')" class="myButton">
       RESUME
     </button>
   </header>
@@ -121,8 +123,66 @@
     <div class="border">
       <div>
         <h4>PROJECTS</h4>
+        <br> <br>
+        <div class='projects'>
+          <div class='project'>
+            <div class='project-image'>
+              <a href='https://github.com/jon-cunicella/review-project' target='_blank'>
+                <img class='project-img' src='/Images/review-plat.PNG'>
+              </a>
+            </div>
+            <div class='project-header'>
+              <h5 class='title'>Welp... | Team Development</h5>
+              <h5 class='tech'>
+                Node.js, CSS3, HTML5, Mongoose, MongoDB
+              </h5>
+              <nav class='project-navbar'>
+                <a class='live-a' href='https://github.com/jon-cunicella/review-project' target='_blank'>
+                  <img src="/Images/GitHub-Mark2.png" alt="GitHub Logo" class="icon" />
+                </a>
+              </nav>
+            </div>
+            <div class='project-summary'>
+              <p class='description'>
+                Full stack web application inspired by Yelp. CSS grid and Flexbox create a unique browsing experience as well as a smooth asthetic.
+              </p>
+              <br>
+              <p class='description'>
+                Features infinite scroll on all multi-meme pages, with an optimized load order. Utilizes MongoDB to store the data and to provide backend validation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class='projects'>
+            <div class='project'>
+              <div class='project-image'>
+                <a href='https://github.com/Chris-Ross/blog-site' target='_blank'>
+                  <img class='project-img' src='/Images/blog-plat.PNG'>
+                </a>
+              </div>
+              <div class='project-header'>
+                <h5 class='title'>Object Oriented Opinions | Paired Development</h5>
+                <h5 class='tech'>
+                  Node.js, CSS3, HTML5, Mongoose, MongoDB
+                </h5>
+                <nav class='project-navbar'>
+                  <a class='live-a' href='https://github.com/Chris-Ross/blog-site' target='_blank'>
+                    <img src="/Images/GitHub-Mark2.png" alt="GitHub Logo" class="icon" />
+                  </a>
+                </nav>
+              </div>
+              <div class='project-summary'>
+                <p class='description'>
+                  Full stack web application inspired by many bloging platforms as well as podcasts. CSS grid and Flexbox create a unique browsing experience as well as a smooth asthetic.
+                </p>
+                <br>
+                <p class='description'>
+                  A smooth interface allows easy interaction with the site. The custom form allows user input to any extent they like. Utilizing MongoDB and basic validations, the user's content is stored until the Data Base is purged.
+                </p>
+              </div>
+            </div>
+          </div>
       </div>
-    </div>
   </section>
 
 
@@ -136,6 +196,7 @@
     </nav>
     <small>&copy; Chris Ross 2019</small>
   </footer>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
